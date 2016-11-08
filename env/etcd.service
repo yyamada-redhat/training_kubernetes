@@ -1,0 +1,13 @@
+[Unit]
+Descriptioin=Etcd Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectoy=/var/lib/etcd/
+EnvironmentFile=/etc/etcd/etcd.conf
+User=etcd
+ExecStart=/usr/local/bin/etcd
+
+[Install]
+WantedBy=multi-user.target

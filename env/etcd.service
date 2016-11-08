@@ -7,7 +7,7 @@ Type=simple
 WorkingDirectoy=/var/lib/etcd/
 EnvironmentFile=/etc/etcd/etcd.conf
 User=etcd
-ExecStart=/usr/local/bin/etcd
+ExecStart=/usr/bin/etcd
 
 [Install]
 WantedBy=multi-user.target
